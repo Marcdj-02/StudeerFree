@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "StudeerFree",
+    "version": "1.0.0",
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.studeersnel.nl/*"],
+            "js": ["/content_script.js"]
+        }
+    ],
+
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "48": "/favicon.png"
+        },
+        "default_title": "StudeerFree",
+        "default_popup": "/popup.html"
+    },
+
+    "permissions": [
+        "storage"
+    ]
+}
