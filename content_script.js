@@ -15,7 +15,7 @@ function scrub() {
     premiumBanners2[i].remove();
     }
 
-    var length = 163;
+    var length = 500;
     for(var page = 1; page <= length; page += 1){
     var hex = page.toString(16);
     var pageContents = document.getElementsByClassName(`pc${hex}`);
