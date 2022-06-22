@@ -1,4 +1,5 @@
 function scrub() {
+    console.log('scrub');
     var popup = document.getElementsByClassName("_3182a7ef6737");
     if(popup.length > 0) popup[0].remove();
 
@@ -25,11 +26,5 @@ function scrub() {
     }
     }
 }
-
-browser.storage.onChanged.addListener((changes, area) => {
-    if (area === 'local' && 'datetime' in changes){
-        scrub();
-    }
-})
 
 scrub();

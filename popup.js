@@ -1,14 +1,9 @@
-let button = document.getElementById("run__button");
-
-button.addEventListener('click', onClick);
-
 async function onClick() {
-    let datetime = new Date();
-    await browser.storage.local.set({ datetime });
+    chrome.tabs.executeScript({
+        file: "/content_script.js",
+    })
+    .catch(console.error.bind(console));
 }
 
-async function init() {
-    onClick();
-}
-
-init().catch(e => console.error(e));
+let button = document.getElementById("run__button");
+button.addEventListener('click', onClick);
