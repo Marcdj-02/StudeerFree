@@ -3,7 +3,7 @@
 A firefox/chrome extension to disable the paywall on studeersnel.nl.
 
 ## Now available as Firefox add-on:
-https://addons.mozilla.org/nl/android/addon/studeerfree/
+https://addons.mozilla.org/addon/studeerfree
 
 ## Soon availabe as Chrome extension... 
 
